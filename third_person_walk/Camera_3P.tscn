@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://third_person_walk/smooth_camera.gd" type="Script" id=1]
+
+[node name="Camera_3P" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8 )
+
+[node name="Separator" type="Node" parent="."]
+
+[node name="Camera" type="Camera" parent="Separator"]
+transform = Transform( 1, 0, 0, 0, 0.925963, 0.377615, 0, -0.377615, 0.925963, 0, 2.92838, 2.56098 )
+script = ExtResource( 1 )
